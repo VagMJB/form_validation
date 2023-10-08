@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário e Validações</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="test">
-        Teste
-    </h1>
+    <div class="container">
+        <section class="header">
+            <h2>Nova conta</h2>
+        </section>
+
+        <form action="" class="form" id="form">
+            <div class="form_cont">
+                <label for="user_name">Nome do usuário</label>
+                <input type="text" id="userName" placeholder="Nome">
+                <a>Aqui vai a mensagem de erro</a>
+            </div>
+
+            <div class="form_cont">
+                <label for="email">Email do usuário</label>
+                <input type="text" id="email" placeholder="E-mail">
+                <a>Aqui vai a mensagem de erro</a>
+            </div>
+
+            <div class="form_cont">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+                <a>Aqui vai a mensagem de erro</a>
+            </div>
+
+            <div class="form_cont">
+                <label for="password-confirmation">Confirmação de senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente">
+                <a>Aqui vai a mensagem de erro</a>
+            </div>
+
+            <button type="submit" class="button_cadastrar">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="./form_validation.js"></script>
 </body>
 </html>
